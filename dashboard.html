@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Bornian Pharmaceuticals</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        /* Sidebar styles */
+        aside {
+            background-color: #4F46E5;
+            color: #fff;
+        }
+
+        main {
+            padding: 1.5rem;
+        }
+
+        .quick-link:hover {
+            background-color: #F3F4F6;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="fixed top-0 border-solid border-gray-200 w-full border-b py-3 bg-white z-50  bg-inherit bg-gradient-to-tr from-blue-500 to white">
+        <div class="container mx-auto ">
+            <div class="w-full flex  flex-col lg:flex-row">
+                <div class=" flex justify-between  lg:flex-row">
+                    <a href="#" class="flex items-center">
+                       <img src="https://t4.ftcdn.net/jpg/01/09/83/77/240_F_109837730_lP8qd6V6XDTW61x8B5CciSmr9RfSnhJP.jpg" alt="logo" class="h-10 px-4"> 
+                    </a>
+                    <button data-collapse-toggle="navbar-nav-without-ul" type="button"
+                        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-nav-without-ul" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden w-full lg:flex lg:pl-11 " id="navbar-nav-without-ul">
+                    <div class="flex items-center flex-col mt-4 lg:mt-0 md:ml-auto max-lg:gap-5 lg:flex-row">
+                        <a href="javascript:;"
+                            class="flex items-center justify-between text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3">Home</a>
+                        <a href="javascript:;"
+                            class="flex items-center justify-between text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3">About
+                            us</a>
+                        <a href="javascript:;"
+                            class="flex items-center justify-between text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3">Services</a>
+                        <a href="javascript:;"
+                            class="flex items-center justify-between text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+                                                            
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="flex  pt-10">
+        <!-- Sidebar -->
+        <aside class="bg-indigo-800 text-white w-64 h-screen">
+            <div class="p-6 text-center text-xl font-bold">
+                Bornian Pharmaceuticals
+            </div>
+            <nav class="mt-6">
+                <a href="#" class="block py-2.5 px-4 hover:bg-indigo-600">Dashboard</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-indigo-600">Book Appointment</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-indigo-600">Emergency Diagnosis</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-indigo-600">My Prescriptions</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-indigo-600">Account Settings</a>
+                <a href="index.html" class="block py-2.5 px-4 hover:bg-indigo-600">Logout</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 bg-cover bg-center h-screen" style="background-image: url(https://plus.unsplash.com/premium_photo-1668898899024-02f028349666?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+            <h1 class="text-3xl font-bold mb-4">Welcome, [User]</h1>
+
+            <!-- Notifications -->
+            <section class="mb-6">
+                <h2 class="text-xl font-semibold mb-2">Notifications</h2>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <p>Talk to a physician at the comfort of your  home</p>
+
+                </div>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="#" id="book-appointment-link" class="block bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-2">Book an Appointment</h3>
+                    <p>Schedule a meeting with a physician</p>
+                </a>
+                <a href="#" id="emergency-diagnosis-link" class="block bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-2">Emergency Diagnosis</h3>
+                    <p>Get a quick diagnosis based on your symptoms</p>
+                </a>
+                <a href="#" id="view-prescriptions-link" class="block bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-2">View Prescriptions</h3>
+                    <p>Access your medication history</p>
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="book-appointment-modal" class="modal">
+        <div class="max-w-3xl mx-auto py-12">
+            <h1 class="text-3xl font-bold mb-8 text-center">Book an Appointment</h1>
+    
+            <!-- Physician Selection -->
+            <section class="mb-8">
+                <label for="physician-select" class="block text-lg font-medium text-gray-700 mb-2">Select a
+                    Physician</label>
+                <select id="physician-select"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option value="">-- Select Physician --</option>
+                    <!-- Example options; these will be dynamically generated -->
+                    <option value="1">Dr. Jane Smith - Cardiologist</option>
+                    <option value="1">Dr. Isaac lie - Dentist</option>
+                    <option value="2">Dr. John Doe - Neurologist</option>
+                    <option value="3">Dr. Emily Dave - Dermatologist</option>
+                    <option value="3">Dr. Emma Sam - Gynaecologist</option>
+                </select>
+            </section>
+    
+            <!-- Date & Time Selection -->
+            <section class="mb-8">
+                <label for="appointment-date" class="block text-lg font-medium text-gray-700 mb-2">Select Date</label>
+                <input type="date" id="appointment-date"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </section>
+    
+            <section class="mb-8">
+                <label for="appointment-time" class="block text-lg font-medium text-gray-700 mb-2">Select Time</label>
+                <select id="appointment-time"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option value="">-- Select Time --</option>
+                    <!-- Example time slots; these will be dynamically generated -->
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="11:00">2:00 PM</option>
+                </select>
+            </section>
+    
+            <!-- Confirm Appointment -->
+            <section class="text-center">
+                <button id="confirm-appointment"
+                    class="w-full bg-indigo-600 text-white py-2 rounded-md shadow-md hover:bg-indigo-700">Confirm
+                    Appointment</button>
+            </section>
+    
+            <!-- Confirmation Message -->
+            <section id="confirmation-message" class="mt-8 hidden text-center bg-green-100 text-green-700 p-4 rounded-lg">
+                <p>Your appointment with <span id="confirmed-physician"></span> on <span id="confirmed-date"></span> at
+                    <span id="confirmed-time"></span> has been confirmed.</p>
+            </section>
+        </div>
+    </div>
+
+    <div id="emergency-diagnosis-modal" class="modal">
+        <div class="modal-content">
+            <div class="max-w-3xl mx-auto py-12">
+                <h1 class="text-3xl font-bold mb-8 text-center">Emergency Diagnosis</h1>
+        
+                <!-- Symptom Input Form -->
+                <section class="mb-8">
+                    <label for="symptoms-input" class="block text-lg font-medium text-gray-700 mb-2">Describe your
+                        symptoms</label>
+                    <textarea id="symptoms-input" rows="5"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        placeholder="Enter your symptoms..."></textarea>
+                </section>
+        
+                <!-- Diagnose Button -->
+                <section class="text-center">
+                    <button id="diagnose-button"
+                        class="w-full bg-indigo-600 text-white py-2 rounded-md shadow-md hover:bg-indigo-700">Get
+                        Diagnosis</button>
+                </section>
+        
+                <!-- Diagnosis Result -->
+                <section id="diagnosis-result" class="mt-8 hidden text-center bg-blue-100 text-blue-700 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold mb-2">Preliminary Diagnosis</h2>
+                    <p id="diagnosis-text"></p>
+                    <p class="mt-4">Recommended Medication: <span id="recommended-medication"></span></p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-prescriptions-modal" class="modal">
+        <div class="modal-content">
+            <div class="max-w-4xl mx-auto py-12">
+                <h1 class="text-3xl font-bold mb-8 text-center">My Prescriptions</h1>
+        
+                <!-- Prescription List -->
+                <section id="prescriptions-list" class="space-y-6">
+                    <!-- Example prescription entry -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-semibold mb-2">Prescription #12345</h2>
+                        <p>Date Issued: <span class="text-gray-600">2024-09-01</span></p>
+                        <p>Medication: <span class="text-gray-600">Paracetamol, 500mg</span></p>
+                        <p>Dosage: <span class="text-gray-600">Take 1 tablet every 4-6 hours as needed</span></p>
+                        <div class="mt-4 flex space-x-4">
+                            <button class="bg-indigo-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-indigo-700"
+                                onclick="printPrescription(12345)">Print</button>
+                            <button class="bg-green-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-green-700"
+                                onclick="downloadPrescription(12345)">Download</button>
+                        </div>
+                    </div>
+                    <!-- More prescriptions will be dynamically generated -->
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+         <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-4">
+                <li>
+                    <a href="javascript:;" class="text-gray-300 hover:text-white">Bornian Pharmaceuticals</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="text-gray-300 hover:text-white">Service</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="text-gray-300 hover:text-white">Contact a Physician</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="text-gray-300 hover:text-white">Blogs</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="text-gray-300 hover:text-white">Support</a>
+                </li>
+            </ul>
+            <p class="text-sm text-gray-400">&copy; 2024 Bornian Pharmaceuticals, All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
